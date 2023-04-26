@@ -9,6 +9,8 @@
 #include <QTcpServer>
 #include <QTcpSocket>
 
+#include "quihelperdata.h"
+
 #define TIMEMS qPrintable(QTime::currentTime().toString("HH:mm:ss zzz"))
 
 QT_BEGIN_NAMESPACE
@@ -29,13 +31,14 @@ public:
 
     QByteArray  messageSend;
     QByteArray  messageRecv;
-
-    QTabWidget  *tabMain;
-    QTabWidget  *tabP500;
+    QByteArray  p500Recv;
+    QByteArray  mcuRecv;
 
 private slots:
 
     void newConnection_Slot();
+
+    void disconnected_Slot();
 
     void readyRead_Slot();
 
@@ -45,12 +48,18 @@ private slots:
 
     void on_btnRun_clicked();
 
+    void on_btnFresh_clicked();
+
+signals:
+
+    void disconnected();
+
 private:
-    void        DataProess(int Function);
+    QList<QString> clients;
+
+    void        processData(int Function);
     void        readData(QByteArray data);
-    uchar       Xor(uchar *buf, int len);
-    static int  strHexToDecimal(const QString &strHex);
-    void loadIP(QComboBox *cbox);
+    void        loadIP(QComboBox *cbox);
 
     bool isOk;
     Ui::MainWindow *ui;
