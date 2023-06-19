@@ -30,126 +30,224 @@
      <attribute name="title">
       <string>主页面</string>
      </attribute>
-     <widget class="QPushButton" name="btnListen">
+     <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>80</y>
-        <width>75</width>
-        <height>23</height>
+        <x>10</x>
+        <y>10</y>
+        <width>461</width>
+        <height>161</height>
        </rect>
       </property>
-      <property name="text">
-       <string>监听</string>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>15</pointsize>
+       </font>
       </property>
+      <property name="title">
+       <string>监听地址</string>
+      </property>
+      <widget class="QPushButton" name="btnListen">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>100</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>监听</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>100</y>
+         <width>54</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>端口</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cboxIP">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>40</y>
+         <width>54</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>IP</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPort">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>2345</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QLineEdit" name="txtPort">
+     <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>110</y>
-        <width>151</width>
-        <height>20</height>
+        <x>10</x>
+        <y>190</y>
+        <width>461</width>
+        <height>181</height>
        </rect>
       </property>
-      <property name="text">
-       <string>2345</string>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>15</pointsize>
+       </font>
       </property>
-     </widget>
-     <widget class="QComboBox" name="cboxIP">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>70</y>
-        <width>151</width>
-        <height>22</height>
-       </rect>
+      <property name="title">
+       <string>设备地址</string>
       </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>80</y>
-        <width>54</width>
-        <height>12</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>IP</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>110</y>
-        <width>54</width>
-        <height>12</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>端口</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="cboxP500">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>170</y>
-        <width>151</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="cboxMCU">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>210</y>
-        <width>151</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>170</y>
-        <width>54</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>恒流泵</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>210</y>
-        <width>54</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>MCU</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnFresh">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>170</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>刷新</string>
-      </property>
+      <widget class="QPushButton" name="btnFresh">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>120</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>刷新</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cboxMCU">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cboxP500">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>50</y>
+         <width>201</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>50</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>恒流泵</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>54</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>MCU</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tabP500">
@@ -186,7 +284,7 @@
        <property name="font">
         <font>
          <family>宋体</family>
-         <pointsize>13</pointsize>
+         <pointsize>15</pointsize>
         </font>
        </property>
        <property name="text">
@@ -414,7 +512,7 @@
        <property name="font">
         <font>
          <family>宋体</family>
-         <pointsize>13</pointsize>
+         <pointsize>15</pointsize>
         </font>
        </property>
        <property name="text">
